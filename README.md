@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ```bash
 npm install daisyui@latest
-npm install next-auth prisma @prisma/client @auth/prisma-adapter bcryptjs axios
+npm install next-auth prisma @prisma/client @auth/prisma-adapter bcryptjs axios react-icons
 ```
 
 

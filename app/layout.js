@@ -1,18 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Mulish, Public_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import { Providers } from "@/lib/providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const publicSans = Public_Sans({ subsets: ["latin"] });
+const mulish = Mulish({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Employlynk",
@@ -22,12 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${publicSans.className} ${mulish.className} antialiased`} suppressHydrationWarning={true}>
         <Providers>
           <Header />
-          <main className="container mx-auto min-h-screen px-4 py-8">
+          <main className="container min-h-screen w-full mx-4 lg:mx-8">
             {children}
           </main>
           <Footer />
