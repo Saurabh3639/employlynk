@@ -36,8 +36,8 @@ export default function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center">
-        <div className="card bg-base-100 w-96 shadow-sm">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="card bg-base-100 w-96 shadow-sm">
         <div className="card-body">
           <h2 className="card-title">Login</h2>
           <label htmlFor="email">Email</label>
