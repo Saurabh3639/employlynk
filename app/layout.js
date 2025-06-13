@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${publicSans.className} ${mulish.className} antialiased`} suppressHydrationWarning={true}>
         <Providers>
           <Header />
-          <main className="container min-h-screen w-full mx-4 lg:mx-8">
+          <main className="min-h-screen mx-4 lg:mx-8">
             {children}
           </main>
           <Footer />

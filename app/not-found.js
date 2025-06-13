@@ -4,7 +4,7 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-[90vh]">
       <h1 className="text-6xl">404</h1>
       <p className="text-base">Page Not Found</p>
       <div className="mt-4">

@@ -19,7 +19,7 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-2xl font-bold">Dashboard</h1>
+      <h1 className="text-2xl font-bold">Dashboard - Student, Recruiter, Admin</h1>
       <h1>Welcome, {session?.user?.name || "User"}</h1>
       <button onClick={() => signOut()} className="btn mt-4">
         Log out
